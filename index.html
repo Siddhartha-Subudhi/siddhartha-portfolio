@@ -1,104 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Siddhartha's Portfolio - A Vibrant Data Engineer Portfolio" />
-  <title>Kareem | Data Engineer Portfolio</title>
-  <link rel="icon" href="favicon.ico" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Siddhartha | Data Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .gradient-bg {
-      background: linear-gradient(to right, #e63946, #ff6f61);
-    }
-    .floating {
-      animation: float 3s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-    }
+    body { background: white; color: #222; font-family: 'Segoe UI', sans-serif; }
+    .primary { color: #d00000; }
+    .bg-primary { background-color: #d00000; }
+    .card { background-color: #fff0f0; border-radius: 1rem; }
+    .shadow-glow { box-shadow: 0 0 10px rgba(208, 0, 0, 0.6); }
   </style>
 </head>
+<body>
 
-<body class="bg-white text-gray-800">
-  <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-white gradient-bg text-center p-10">
-    <h1 class="text-5xl md:text-6xl font-bold mb-4" data-aos="zoom-in">Hi, I'm Kareem</h1>
-    <p class="text-xl md:text-2xl" data-aos="fade-up">A Data Engineer who paints solutions with code</p>
-    <div class="mt-8 animate-bounce">
-      <a href="#about" class="bg-white text-red-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100">Explore More ↓</a>
+  <!-- Header -->
+  <header class="text-center py-12 bg-primary text-white animate__animated animate__fadeInDown">
+    <h1 class="text-5xl font-bold">Hi, I'm Siddhartha</h1>
+    <p class="mt-3 text-xl">Data Engineer | Azure | PySpark | SQL | ADF</p>
+  </header>
+
+  <!-- About Me -->
+  <section class="max-w-4xl mx-auto my-10 px-6" data-aos="fade-up">
+    <div class="card p-6 shadow-glow">
+      <h2 class="text-3xl font-bold text-primary mb-4">About Me</h2>
+      <p>I am a passionate Data Engineer with 5+ years of experience building scalable ETL pipelines using Azure Data Factory, Databricks, PySpark, and SQL. I specialize in transforming raw data into insights and building modern data architectures.</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 px-8 bg-gray-100 text-center">
-    <h2 class="text-4xl font-bold text-red-600 mb-6" data-aos="fade-right">About Me</h2>
-    <p class="max-w-3xl mx-auto text-lg" data-aos="fade-up">
-      I'm a passionate Data Engineer with 5+ years of experience in Azure Data Factory, Databricks, PySpark, and building scalable ETL pipelines. My work blends analytics with creativity, turning raw data into visual insights. I'm also certified in DP-900, DP-203, and a recognized top performer.
-    </p>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="py-20 px-8 bg-white">
-    <h2 class="text-4xl font-bold text-center text-red-600 mb-10" data-aos="fade-up">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in">
-        <h3 class="text-xl font-bold text-red-500 mb-2">ETL on Azure Data Factory</h3>
-        <p>Developed dynamic pipelines to ingest and transform data into Azure SQL Database from various sources.</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
-        <h3 class="text-xl font-bold text-red-500 mb-2">Delta Lakehouse with Databricks</h3>
-        <p>Optimized Delta table queries, streaming ingestion, and implemented CDC with upserts.</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
-        <h3 class="text-xl font-bold text-red-500 mb-2">PySpark Transformations</h3>
-        <p>Built scalable PySpark data pipelines for large-scale log data aggregation and reporting.</p>
+  <!-- Skills -->
+  <section class="max-w-4xl mx-auto my-10 px-6" data-aos="fade-right">
+    <div class="card p-6">
+      <h2 class="text-3xl font-bold text-primary mb-4">Skills</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <ul class="list-disc list-inside">
+          <li>Azure Data Factory</li>
+          <li>Databricks / PySpark</li>
+          <li>SQL / T-SQL / PL/SQL</li>
+        </ul>
+        <ul class="list-disc list-inside">
+          <li>ETL Pipelines</li>
+          <li>Data Warehousing</li>
+          <li>Git / CI-CD</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="py-20 px-8 bg-gray-100">
-    <h2 class="text-4xl font-bold text-center text-red-600 mb-10" data-aos="fade-up">Skills</h2>
-    <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up">
-      <span class="bg-white border border-red-500 text-red-600 px-4 py-2 rounded-full">Azure Data Factory</span>
-      <span class="bg-white border border-red-500 text-red-600 px-4 py-2 rounded-full">Databricks</span>
-      <span class="bg-white border border-red-500 text-red-600 px-4 py-2 rounded-full">PySpark</span>
-      <span class="bg-white border border-red-500 text-red-600 px-4 py-2 rounded-full">SQL</span>
-      <span class="bg-white border border-red-500 text-red-600 px-4 py-2 rounded-full">Tableau</span>
-      <span class="bg-white border border-red-500 text-red-600 px-4 py-2 rounded-full">Azure Synapse</span>
+  <!-- Projects -->
+  <section class="max-w-4xl mx-auto my-10 px-6" data-aos="zoom-in">
+    <div class="card p-6">
+      <h2 class="text-3xl font-bold text-primary mb-4">Projects</h2>
+      <ul class="list-disc list-inside">
+        <li><strong>Retail Sales Data Lakehouse</strong>: Built scalable Delta Lake architecture for real-time sales reporting.</li>
+        <li><strong>Legacy to Azure Migration</strong>: Migrated SSIS ETL to ADF with improved performance and monitoring.</li>
+        <li><strong>Streaming Pipelines</strong>: Built PySpark streaming for near real-time product recommendations.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="py-20 px-8 bg-white text-center">
-    <h2 class="text-4xl font-bold text-red-600 mb-6" data-aos="fade-up">Let's Connect</h2>
-    <p class="mb-6 text-lg" data-aos="fade-up">I'm open to collaborations, discussions and opportunities. Let's talk!</p>
-    <a href="mailto:kareem.data@example.com" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold" data-aos="zoom-in">Email Me</a>
-    <div class="mt-6" data-aos="fade-up">
-      <a href="https://linkedin.com/in/kareem" class="text-red-500 underline mr-4">LinkedIn</a>
-      <a href="https://github.com/kareem-data" class="text-red-500 underline">GitHub</a>
+  <!-- Contact -->
+  <section class="max-w-4xl mx-auto my-10 px-6" data-aos="fade-up">
+    <div class="card p-6 text-center">
+      <h2 class="text-3xl font-bold text-primary mb-4">Let's Connect</h2>
+      <p>Email: <a href="mailto:siddhartha@email.com" class="underline text-primary">siddhartha@email.com</a></p>
+      <p>GitHub: <a href="https://github.com/siddhartha" class="underline text-primary">github.com/siddhartha</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/siddhartha" class="underline text-primary">linkedin.com/in/siddhartha</a></p>
     </div>
   </section>
 
-  <footer class="py-6 text-center text-sm text-gray-500 bg-gray-100">
-    © 2025 Kareem | All rights reserved.
-  </footer>
-
-  <script>
-    AOS.init();
-  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
-
 </html>
