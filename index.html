@@ -1,112 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-  <title>Portfolio - Sidd</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+
+  <!-- Boxicons -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <style>
-    :root {
-      --first-color: #b71c1c;
-      --second-color: #d32f2f;
-      --text-color: #fff;
-      --bg-color: #1c1c1c;
-    }
-
+    /* === GLOBAL RED THEME === */
     body {
-      background: linear-gradient(120deg, var(--second-color), var(--first-color));
-      color: var(--text-color);
       font-family: 'Poppins', sans-serif;
-    }
-
-    .nav__logo, .section-title, .skills__name, .footer__title {
-      color: var(--text-color);
-    }
-
-    .nav__menu {
-      background-color: rgba(0, 0, 0, 0.7);
+      background: linear-gradient(to bottom right, #800000, #8B0000);
+      color: #fff;
+      margin: 0;
+      padding: 0;
     }
 
     .button {
-      background-color: var(--text-color);
-      color: var(--first-color);
-      transition: 0.3s;
+      background-color: #FF3333;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
     }
 
     .button:hover {
-      background-color: var(--second-color);
-      color: var(--text-color);
-      transform: scale(1.05);
+      background-color: #cc0000;
     }
 
-    .skills__bar, .skills__percentage {
-      background-color: var(--text-color);
-    }
-
-    .work__img img,
-    .about__img img,
-    .skills__img {
-      border: 5px solid var(--text-color);
-      transition: transform 0.5s ease;
-      border-radius: 15px;
-    }
-
-    .work__img img:hover,
-    .about__img img:hover,
-    .skills__img:hover {
-      transform: scale(1.05);
-    }
-
-    .footer__icon i {
-      color: var(--text-color);
-      font-size: 1.5rem;
-      transition: color 0.3s;
-    }
-
-    .footer__icon:hover i {
-      color: var(--second-color);
-    }
-
-    .home__title-color {
-      color: #fff;
-      background: var(--second-color);
-      padding: 2px 8px;
-      border-radius: 8px;
+    .section-title {
+      font-size: 2.5rem;
+      color: #FFD6D6;
+      margin-bottom: 2rem;
+      text-align: center;
       animation: pulse 2s infinite;
     }
 
     @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
-      70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
-    }
-
-    section {
-      animation: fadeInUp 1s ease forwards;
-      opacity: 0;
-    }
-
-    section:nth-of-type(1) { animation-delay: 0.2s; }
-    section:nth-of-type(2) { animation-delay: 0.4s; }
-    section:nth-of-type(3) { animation-delay: 0.6s; }
-    section:nth-of-type(4) { animation-delay: 0.8s; }
-    section:nth-of-type(5) { animation-delay: 1s; }
-
-    @keyframes fadeInUp {
-      to {
+      0%, 100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1);
       }
-      from {
-        opacity: 0;
-        transform: translateY(30px);
+      50% {
+        opacity: 0.8;
+        transform: scale(1.05);
       }
+    }
+
+    .nav__logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav__link {
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .nav__link:hover {
+      color: #FF9999;
+    }
+
+    .skills__bar,
+    .skills__percentage {
+      background: #FF6666;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #400000;
+    }
+
+    .footer__title,
+    .footer__copy {
+      color: #eee;
+    }
+
+    .footer__icon {
+      color: #FF9999;
+      margin: 0 0.5rem;
+    }
+
+    /* Ensuring all sections show up */
+    .section, .bd-grid {
+      visibility: visible;
+      opacity: 1;
     }
   </style>
 </head>
+
 <body>
-  <!-- HTML content stays the same -->
-  <!-- Paste your original HTML body content from the template here -->
-</body>
-</html>
+  <!-- INSERT YOUR HTML BODY CONTENT HERE -->
+  <!-- Paste the full <header> to <footer> you shared earlier -->
+
+  <!-- Example placeholder -->
+  <h1 class="section-title">Hi, I'm Marlon</h1>
+  <p style="text-align: center;">This is a red-themed version of your portfolio</p>
+
+  <!-- JS -->
+  <script>
+    // Scroll animations
+    ScrollReveal().reveal('.secti
